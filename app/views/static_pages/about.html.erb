@@ -2,14 +2,14 @@
 <h1><%= t ".about_title" %></h1>
 <p>
   <%= t ".about_description_html_1" %>
-  <%= link_to "Ruby on Rails Tutorial", "https://www.railstutorial.org/" %>
+  <%= link_to t("ruby_on_rails_tutorial"), Settings.link.home %>
   <%= t ".about_description_html_2" %>
-  <%= link_to t(".learn_enough"), "https://www.learnenough.com/" %>      
+  <%= link_to t(".learn_enough"), Settings.link.learn_enough %>      
   <%= t ".about_description_html_3" %>
-  <%= link_to t(".book"), "https://www.railstutorial.org/book" %>      
+  <%= link_to t(".book"), Settings.link.book %>      
   <%= t ".about_description_html_4" %>
-  <%= link_to t(".screencast_series"), "https://screencasts.railstutorial.org/" %>     
+  <%= link_to t(".screencast_series"), Settings.link.screencast %>     
   <%= t ".about_description_html_5" %>
-  <%= link_to "Ruby on Rails", "https://rubyonrails.org/" %>
+  <%= link_to t(".ruby_on_rails"), Settings.link.ruby_on_rails %>
   <%= t ".about_description_html_6" %>
 </p>

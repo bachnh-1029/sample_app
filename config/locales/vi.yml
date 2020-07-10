@@ -2,6 +2,18 @@ vi:
   layouts:
     application:
       title_app: "Vi du khoa hoc ROR"
+      english: "Tieng anh"
+      vietnamese: "Tieng viet"
+    header:
+      log_in: "Dang nhap"
+      sample_app: "Web Mau"
+    footer:
+      about: "Gioi thieu"
+      contact: "Lien he"
+      ror: "Khoa hoc Ruby on rails"
+      the: "Quyen"
+      by: "sang tac boi"
+      new: "Tin tuc"
   static_pages:
     home:
       home: "Trang chu"
@@ -9,6 +21,7 @@ vi:
       home_title: "Ung dung vi du"
       home_description_html_1: "Đây là trang chủ cho" 
       home_description_html_2: "ứng dụng mẫu." 
+      sign_up: "Dang ky ngay nao!!!"
     help:
       header: "Vi du khoa hoc ROR"
       help_title: "Giup do"
@@ -23,3 +36,11 @@ vi:
       about_description_html_4: "va"
       about_description_html_5: "để dạy phát triển web với"
       about_description_html_6: "Đây là ứng dụng mẫu cho hướng dẫn."
+    contact:
+      contact_title: "Lien he"
+      contact_description_html_1: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
+      contact_page: "trang lien he"
+  users:
+    new:
+      sign_up: "Dang ky"
+      description: "Đây sẽ là một trang đăng ký cho người dùng mới."
