@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: lib_mng_development
+  database: sample_app_development
 test:
   <<: *default
-  database: lib_mng_test
+  database: sample_app_test
 
 production:
   <<: *default
-  database: lib_mng_prod
+  database: sample_app_prod
   

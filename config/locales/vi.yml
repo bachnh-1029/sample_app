@@ -1,3 +1,25 @@
 vi:
-  title_app: "Ung dung"
-  
+  layouts:
+    application:
+      title_app: "Vi du khoa hoc ROR"
+  static_pages:
+    home:
+      home: "Trang chu"
+      header: "Vi du khoa hoc ROR"
+      home_title: "Ung dung vi du"
+      home_description_html_1: "Đây là trang chủ cho" 
+      home_description_html_2: "ứng dụng mẫu." 
+    help:
+      header: "Vi du khoa hoc ROR"
+      help_title: "Giup do"
+      help_description_html_1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      help_description_html_2:  "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+    about:
+      header: "Vi du khoa hoc ROR"
+      about_title: "Gioi thieu"
+      about_description_html_1: "Cac"
+      about_description_html_2: "một phần của"
+      about_description_html_3: "gia đình hướng dẫn, là một"
+      about_description_html_4: "va"
+      about_description_html_5: "để dạy phát triển web với"
+      about_description_html_6: "Đây là ứng dụng mẫu cho hướng dẫn."
