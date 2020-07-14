@@ -44,3 +44,8 @@ vi:
     new:
       sign_up: "Dang ky"
       description: "Đây sẽ là một trang đăng ký cho người dùng mới."
+      name: "Ten nguoi dung"
+      password: "Mat khau"
+      password_confirmation: "Xac nhan mat khau"
+      signup_success: "Dang ky thanh cong, chao mung den voi web cua chung toi!!!"
+      signup_fail: "Dang ky that bai, hay xem lai email hoac mat khau."
