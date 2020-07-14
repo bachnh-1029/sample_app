@@ -2,6 +2,18 @@ en:
   layouts:
     application:
       title_app: "Ruby on rails Tutorial Sample App"
+      english: "English"
+      vietnamese: "Vietnamese"
+    header:
+      log_in: "Log in"
+      sample_app: "Sample App"
+    footer:
+      about: "About"
+      contact: "Contact"
+      ror: "Ruby on rails Tutorials"
+      the: "The"
+      by: "by"
+      new: "News"
   static_pages:
     home:
       home: "Home"
@@ -9,6 +21,7 @@ en:
       home_title: "Sample App"
       home_description_html_1: "This is the home page for the" 
       home_description_html_2: "sample application."
+      sign_up: "Sign up now!!!"
     help:
       header: "Ruby on rails Tutorial Sample App"
       help_title: "Help"
@@ -23,3 +36,11 @@ en:
       about_description_html_4: "and"
       about_description_html_5: "to teach web development with"
       about_description_html_6: "This is the sample app for the tutorial."
+    contact:
+      contact_title: "Contact"
+      contact_description_html_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page"
+  users:
+    new:
+      sign_up: "Sign Up"
+      description: "This will be a signup page for new users."

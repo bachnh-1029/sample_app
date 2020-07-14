@@ -2,7 +2,7 @@
 <h1> <%= t ".help_title" %> </h1>
 <p>
   <%= t ".help_description_html_1" %>
-  <%= link_to "Rails Tutorial Help page", "https://www.railstutorial.org/help" %>
+  <%= link_to t(".rails_tutorial_help_page"), Settings.link.help %>
   <%= t ".help_description_html_2" %>
-  <em><%= link_to "Ruby on Rails Tutorial", "https://www.railstutorial.org/book" %></em>
+  <em><%= link_to t(".ruby_on_rails_tutorial"), Settings.link.book %></em>
 </p>
