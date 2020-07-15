@@ -13,11 +13,17 @@
   <body>
     <%= render "layouts/header" %>
     <div class="container">
+      <div class="row center">
+        <% flash.each do |msg_type, msg| %>
+          <div class="alert alert-<%= msg_type %>"><%= msg %></div>
+        <% end %>
+      </div>
       <%= render "layouts/header" %>
       <%= link_to t(".english"), locale: :en %>
       <%= link_to t(".vietnamese"), locale: :vi %>
       <%= yield %>
       <%= render "layouts/footer" %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
