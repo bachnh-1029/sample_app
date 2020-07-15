@@ -6,3 +6,10 @@ link:
   learn_enough: "https://www.learnenough.com/"
   screencasts: "https://screencasts.railstutorial.org/"
   ruby_on_rails: "https://rubyonrails.org/"
+  
+email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+
+user:
+  name_length: 50
+  email_length: 255
+  password_length: 6
