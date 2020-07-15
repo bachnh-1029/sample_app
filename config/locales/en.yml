@@ -44,3 +44,8 @@ en:
     new:
       sign_up: "Sign Up"
       description: "This will be a signup page for new users."
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      signup_success: "Welcome to my web!!!"
+      signup_fail: "Sign up fail, please check email or password."
