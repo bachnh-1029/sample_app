@@ -6,8 +6,12 @@ class SessionsController < ApplicationController
     if user&.authenticate(params[:session][:password]).present?
       flash[:success] = t ".login_success"
       log_in user
-      params[:session][:remember_me] == Settings.checkbox ? remember(user) : forget(user)
-      redirect_to user
+      params[:session][:remember_me] = if Settings.checkbox
+                                         remember(user)
+                                       else
+                                         forget(user)
+                                       end
+      redirect_back_or user
     else
       flash[:warning] = t ".login_fail"
       redirect_to login_path

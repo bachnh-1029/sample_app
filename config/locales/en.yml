@@ -10,6 +10,7 @@ en:
       profile: "Profile"
       settings: "Settings"
       log_out: "Log Out"
+      user: "User"
     footer:
       about: "About"
       contact: "Contact"
@@ -44,6 +45,7 @@ en:
       contact_description_html_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
   users:
+    log_in_not_yet: "You log in not yet, let log in now !!!"
     new:
       sign_up: "Sign Up"
       description: "This will be a signup page for new users."
@@ -52,6 +54,17 @@ en:
       password_confirmation: "Password Confirmation"
       signup_success: "Welcome to my web!!!"
       signup_fail: "Sign up fail, please check email or password."
+    edit:
+      edit_user: "Edit profile"
+      submit: "Update"
+      update_profile: "Update profile"
+    update:
+      update_success: "You update profile successfully <3"
+    index:
+      index: "Users"
+      all_user: "All users"
+      delete: "Detele"
+      sure: "You sure ?"
   sessions:
     new:
       log_in: "Log in"
@@ -60,5 +73,13 @@ en:
     create:
       login_success: "Log in successfully!!!"
       login_fail: "Log in fail, your account not exist or email, password fail @@@"
+    edit:
+      submit: "Save submit"
     destroy:
       logout_success: "Log out success, see you again <3."
+  views:
+    pagination:
+      first: "First"
+      next: "Next"
+      previous: "Previous"
+      last: "Last"

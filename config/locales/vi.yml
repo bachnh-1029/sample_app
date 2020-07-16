@@ -10,6 +10,7 @@ vi:
       profile: "Ho so"
       settings: "Thiet lap"
       log_out: "Dang xuat"
+      user: "Nguoi dung"
     footer:
       about: "Gioi thieu"
       contact: "Lien he"
@@ -44,6 +45,7 @@ vi:
       contact_description_html_1: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
       contact_page: "trang lien he"
   users:
+    log_in_not_yet: "Ban chua dang nhap, hay dang nhap ngay nao !!!"
     new:
       sign_up: "Dang ky"
       description: "Đây sẽ là một trang đăng ký cho người dùng mới."
@@ -52,6 +54,17 @@ vi:
       password_confirmation: "Xac nhan mat khau"
       signup_success: "Dang ky thanh cong, chao mung den voi web cua chung toi!!!"
       signup_fail: "Dang ky that bai, hay xem lai email hoac mat khau."
+    edit:
+      edit_user: "Sua ho so"
+      submit: "Thay doi"
+      update_profile: "Cap nhat ho so"
+    update:
+      update_success: "Ban da cap nhat ho so thanh cong <3"
+    index:
+      index: "Nguoi dung"
+      all_user: "Tat ca nguoi dung"
+      delete: "Xoa"
+      sure: "Ban chac khong?"
   sessions:
     new:
       log_in: "Dang nhap."
@@ -62,3 +75,9 @@ vi:
       login_fail: "Dang nhap that bai, tai khoan cua ban khong ton tai hoac email, password sai @@@"
     destroy:
       logout_success: "Dang xuat thanh cong, hen gap lai ban <3."
+  views:
+    pagination:
+      first: "Trang dau"
+      next: "Trang sau"
+      previous: "Trang truoc"
+      last: "Trang cuoi"
