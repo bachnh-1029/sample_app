@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   VALID_EMAIL_REGEX = Settings.email_regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
   attr_accessor :remember_token, :activation_token, :reset_token
@@ -13,6 +14,7 @@ class User < ApplicationRecord
                     uniqueness: true
   validates :password, presence: true,
                        length: {minimum: Settings.user.password_length}
+  scope :order_desc, ->{order created_at: :desc}
   has_secure_password
 
   class << self
@@ -65,6 +67,10 @@ class User < ApplicationRecord
 
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
+  end
+
+  def feed
+    microposts
   end
 
   private
