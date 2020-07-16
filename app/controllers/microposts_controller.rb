@@ -4,7 +4,7 @@ class MicropostsController < ApplicationController
   before_action :new_micropost, only: :create
 
   def create
-    @micropost.image.attach micropost_params[:micropost][:image]
+    @micropost.image.attach micropost_params[:image]
     if @micropost.save
       flash[:success] = t "micropost.create_success"
       redirect_to root_url
