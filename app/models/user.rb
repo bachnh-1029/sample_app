@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.email_regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -52,6 +52,19 @@ class User < ApplicationRecord
 
   def send_mail_activate
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_send_at: Time.zone.now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.time_link_die.hours.ago
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
   end
 
   private
