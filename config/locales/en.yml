@@ -73,6 +73,7 @@ en:
     create:
       login_success: "Log in successfully!!!"
       login_fail: "Log in fail, your account not exist or email, password fail @@@"
+      mail_notice: "Account not activated. Check your email for the the activation link !!!"
     edit:
       submit: "Save submit"
     destroy:
@@ -83,3 +84,10 @@ en:
       next: "Next"
       previous: "Previous"
       last: "Last"
+  user_mailer:
+    say_hi: "Hi"
+    mail_to: "Welcome to the Sample App! Click on the link below to activate your
+      account"
+    active: "Activate"
+    click_reset_password: "Click the link below to reset your password"
+    notice_link_die: "The link will expire in 2 hours"
