@@ -14,3 +14,6 @@ user:
   email_length: 255
   password_length: 6
   size_avatar: 80
+session:
+  create:
+    checkbox: 1
