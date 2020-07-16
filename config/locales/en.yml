@@ -7,6 +7,9 @@ en:
     header:
       log_in: "Log in"
       sample_app: "Sample App"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log Out"
     footer:
       about: "About"
       contact: "Contact"
@@ -49,3 +52,12 @@ en:
       password_confirmation: "Password Confirmation"
       signup_success: "Welcome to my web!!!"
       signup_fail: "Sign up fail, please check email or password."
+  sessions:
+    new:
+      log_in: "Log in"
+      new_user: "New User?"
+    create:
+      login_success: "Log in successfully!!!"
+      login_fail: "Log in fail, your account not exist or email, password fail @@@"
+    destroy:
+      logout_success: "Log out success, see you again <3."

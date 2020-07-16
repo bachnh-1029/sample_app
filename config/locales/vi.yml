@@ -7,6 +7,9 @@ vi:
     header:
       log_in: "Dang nhap"
       sample_app: "Web Mau"
+      profile: "Ho so"
+      settings: "Thiet lap"
+      log_out: "Dang xuat"
     footer:
       about: "Gioi thieu"
       contact: "Lien he"
@@ -49,3 +52,12 @@ vi:
       password_confirmation: "Xac nhan mat khau"
       signup_success: "Dang ky thanh cong, chao mung den voi web cua chung toi!!!"
       signup_fail: "Dang ky that bai, hay xem lai email hoac mat khau."
+  sessions:
+    new:
+      log_in: "Dang nhap."
+      new_user: "Nguoi dung moi?"
+    create:
+      login_success: "Dang nhap thanh cong!!!"
+      login_fail: "Dang nhap that bai, tai khoan cua ban khong ton tai hoac email, password sai @@@"
+    destroy:
+      logout_success: "Dang xuat thanh cong, hen gap lai ban <3."
