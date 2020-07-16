@@ -5,10 +5,14 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.page(params[:page]).per Settings.kaminari.per_page
+    @users = User.order_desc.page(params[:page])
+                 .per Settings.kaminari.per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page(params[:page])
+                       .per Settings.kaminari.per_page
+  end
 
   def new
     @user = User.new
