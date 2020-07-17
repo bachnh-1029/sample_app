@@ -156,3 +156,19 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+
+.checkbox-inline {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-left: 0px;
+
+  span {
+    font-weight: normal;
+    margin-left: 20px;
+  }
+}
+
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
+}

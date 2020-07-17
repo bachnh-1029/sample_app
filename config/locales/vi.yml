@@ -56,6 +56,7 @@ vi:
     new:
       log_in: "Dang nhap."
       new_user: "Nguoi dung moi?"
+      remember_me: "Cau xin nguoi hay nho"
     create:
       login_success: "Dang nhap thanh cong!!!"
       login_fail: "Dang nhap that bai, tai khoan cua ban khong ton tai hoac email, password sai @@@"

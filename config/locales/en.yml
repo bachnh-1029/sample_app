@@ -56,6 +56,7 @@ en:
     new:
       log_in: "Log in"
       new_user: "New User?"
+      remember_me: "Remember me on computer"
     create:
       login_success: "Log in successfully!!!"
       login_fail: "Log in fail, your account not exist or email, password fail @@@"
