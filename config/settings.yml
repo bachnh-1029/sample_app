@@ -17,3 +17,5 @@ user:
 session:
   create:
     checkbox: 1
+kaminari:
+  per_page: 10
