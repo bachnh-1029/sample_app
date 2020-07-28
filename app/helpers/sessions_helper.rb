@@ -14,10 +14,26 @@ module SessionsHelper
       @current_user || User.find_by(id: user_id)
     elsif user_id = cookies.signed[:user_id]
       user = User.find_by id: user_id
-      if user&.authenticated? cookies[:remember_token]
+      if user&.authenticated?(:remember, cookies[:remember_token])
         log_in user
-        @current_user = user
+        user
       end
+    end
+  end
+
+  def activated user
+    if user.activated?
+      params[:session][:remember_me] = if Settings.checkbox
+                                         remember(user)
+                                       else
+                                         forget(user)
+                                       end
+      log_in user
+      redirect_back_or user
+    else
+      message = t ".mail_notice"
+      flash[:warning] = message
+      redirect_to root_url
     end
   end
 
@@ -34,7 +50,6 @@ module SessionsHelper
   def logout
     forget current_user
     session.delete :user_id
-    @current_user = nil
   end
 
   def redirect_back_or default

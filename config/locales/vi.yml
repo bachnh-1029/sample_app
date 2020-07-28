@@ -73,6 +73,7 @@ vi:
     create:
       login_success: "Dang nhap thanh cong!!!"
       login_fail: "Dang nhap that bai, tai khoan cua ban khong ton tai hoac email, password sai @@@"
+      mail_notice: "Tai khoan chua duoc kich hoat. Kiem tra mail de kich hoat tai khoan !!!"
     destroy:
       logout_success: "Dang xuat thanh cong, hen gap lai ban <3."
   views:
@@ -81,3 +82,9 @@ vi:
       next: "Trang sau"
       previous: "Trang truoc"
       last: "Trang cuoi"
+  user_mailer:
+    say_hi: "Xin chao"
+    mail_to: "Chao mung ban den voi app cua chung toi. Nhan vao nut de kich hoat tai khoan"
+    active: "Kich hoat"
+    click_reset_password: "An vao link ben duoi de reset mat khau"
+    notice_link_die: "Link se huy sau 2 tieng"
