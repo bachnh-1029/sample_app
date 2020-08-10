@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  scope :order_desc, ->{order created_at: :desc}
   VALID_EMAIL_REGEX = Settings.email_regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
   attr_accessor :remember_token, :activation_token, :reset_token
