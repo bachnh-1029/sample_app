@@ -15,6 +15,7 @@ class User < ApplicationRecord
                     uniqueness: true
   validates :password, presence: true,
                        length: {minimum: Settings.user.password_length}
+  scope :order_desc, ->{order created_at: :desc}
   has_secure_password
 
   class << self
