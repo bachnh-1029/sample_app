@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = User.new aaaa
   end
 
   def create
@@ -78,3 +78,5 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user.admin?
   end
 end
+
+confilt
